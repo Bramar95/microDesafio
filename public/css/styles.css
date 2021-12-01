@@ -1,0 +1,75 @@
+@import url("/normalize.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    max-width: 90%;
+    margin: auto;
+    font-family: "roboto", arial;
+}
+
+.main article {
+    margin: 10px;
+}
+
+.products i {
+    color: rgb(15, 199, 15);
+}
+
+.discount {
+    color: rgb(15, 199, 15);
+}
+
+.description {
+    border-top: solid 1px #ebebeb;
+    margin: 10px;
+    padding: 15px;
+}
+
+.logo {
+    position: center;
+    margin: auto;
+    
+}
+
+.initial-content {
+    background-color: #EAC926;
+    font-family: "roboto", arial;
+}
+
+.initial-content h2 {
+    font-size: 12px;
+    text-align: center;
+}
+
+nav.header-nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.burguer-menu {
+    background-color: rgb(23, 18, 95);
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    max-width: 40px;
+    border-radius: 5px;
+    color: white;
+}
+
+.pie {
+    text-align: center;
+}
+
+.pie i {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
