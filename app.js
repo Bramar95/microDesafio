@@ -10,3 +10,13 @@ app.get("/", (req, res)=> {
 let htmlPath= path.join(__dirname, "/views/home.html");
 res.sendFile(htmlPath);
 });
+
+app.get("/register", (req, res)=> {
+    let registerPath= path.join(__dirname, "/views/register.html");
+    res.sendFile(registerPath);
+});
+
+app.get("/login", (req, res)=> {
+    let loginPath= path.join(__dirname, "/views/login.html");
+    res.sendFile(loginPath);
+});
