@@ -197,7 +197,7 @@
 .header-nav {
     display: none;
 }
-
+/*footer*/
 ul {
     list-style: none;
     padding: 0;
@@ -237,12 +237,24 @@ li a{
     margin: auto;
 }
 
+.footer-title {
+    text-align: center;
+}
+
 .bottom-footer {
         display: flex;
         margin: auto;
+        height: 150px;
         flex-wrap: wrap;
+        padding-top: 10px;
+        justify-content: space-between;
         background-color: rgb(100, 100, 100);
     }
+.footer-list-left li a,
+.footer-list-right li a{
+    list-style: none;
+    color: #444;
+}
 
 @media (min-width: 362px) {
     .header-container {
@@ -262,6 +274,9 @@ li a{
     .product-name:hover {
         opacity: 1;
     }
+    .promotion-text {
+        font-size: 150px;
+    }
     .header-nav {
         display: flex;
         flex-wrap: wrap;
@@ -270,6 +285,9 @@ li a{
     }
     .header-nav ul {
         width: 40%;
+    }
+    .header-nav ul li {
+        font-size: 1.8rem;
     }
     .latest-content,
     .offer-content{
