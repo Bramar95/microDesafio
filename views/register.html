@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
         <header class="main-header">
@@ -42,21 +42,21 @@
         <br>
     </div>
     </header>
-    <main>
+    <main class="register-container">
         <form action="/home.html" method="get">
-                <div>
+                <div class="input-box">
                     <label for="surname-name">Nombre y apellido:</label>
                     <input type="text" name="surname-name" id="surname-name">
                     <label for="" class="feedback"></label>
                 </div>
                 <br>
-                <div>
+                <div class="input-box">
                     <label for="user-name">Nombre de usuari@:</label>
                     <input type="text" name="user-name" id="user-name">
                     <label for="" class="feedback"></label>
                 </div>
                 <br>
-                <div>
+                <div class="input-box">
                     <label for="birth-date">Fecha de nacimiento</label>
                     <input type="date" name="birth-date" id="birth-date">
                     <label for="" class="feedback"></label>
@@ -68,7 +68,7 @@
                     <label for="" class="feedback"></label>
                 </div>
                 <br>
-                <div>
+                <div class="input-box">
                     <label for="sale-or-buy">¿Desea comprar o vender?</label>
                     <br>
                     <label for="buy">Comprar</label>
@@ -92,23 +92,25 @@
                     <input type="checkbox" name="categorias" value="salud">Vida sana</input>
                     <label for="" class="feedback"></label>
                 <br>
-                <label for="profile-photo">Seleccionar imagen:</label>
-                <input type="file" name="profile-photo" accept=".jpg">
-                <label for="" class="feedback"></label>
-                <br>
-                <label for="pass">Ingrese contraseña:</label>
-                <input type="password" name="pass" placeholder="Constraseña">
-                <label for="" class="feedback"></label>
-                <br>
-                <label for="pass-confirm">Confirme contraseña:</label>
-                <input type="password" name="pass-confirm" placeholder="Contraseña">
-                <label for="" class="feedback"></label> 
-                <br>
-                <input type="submit" name="send" value="Enviar">
-                <label for="" class="feedback">D/label>
-                <br>
-                <input type="reset" name="reset" value="Borrar">
-                <label for="" class="feedback"></label>
+                <div class="input-box">
+                    <label for="profile-photo">Seleccionar imagen:</label>
+                    <input type="file" name="profile-photo" accept=".jpg">
+                    <label for="" class="feedback"></label>
+                    <br>
+                    <label for="pass">Ingrese contraseña:</label>
+                    <input type="password" name="pass" placeholder="Constraseña">
+                    <label for="" class="feedback"></label>
+                    <br>
+                    <label for="pass-confirm">Confirme contraseña:</label>
+                    <input type="password" name="pass-confirm" placeholder="Contraseña">
+                    <label for="" class="feedback"></label> 
+                    <br>
+                    <input type="submit" name="send" value="Enviar" class="button">
+                    <label for="" class="feedback"></label>
+                    <br>
+                    <input type="reset" name="reset" value="Borrar" class="button">
+                    <label for="" class="feedback"></label>
+                </div>
         </form>
     </main>
     <footer class="main-footer">

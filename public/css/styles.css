@@ -213,6 +213,7 @@ li a{
     background-color: lightgray;
     width: 100%;
     margin: auto;
+    font-family: "Roboto", sans-serif;
 }
 
 .item {
@@ -254,6 +255,65 @@ li a{
 .footer-list-right li a{
     list-style: none;
     color: #444;
+}
+/*Main login*/
+.container-login {
+    background-color: rgb(100, 100, 100);
+    width: 100%;
+    margin:auto;
+    text-align: center;
+}
+.field {
+    width: 70%;
+    border-radius: 7px;
+    margin: 8px;
+}
+.container-login {
+    height: 500px;
+}
+.container-login input {
+    height: 25px;
+    margin: 20px;
+}
+.container-login input {
+    background-color:#fff;
+    transition: background-color, 0.5s;
+    border-radius: 8px;
+    width: 75%;
+}
+
+.container-login input:hover {
+    background-color:  #0022AA;
+}
+/*register*/
+.register-container {
+    background-color: rgb(100, 100, 100);
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+.input-box input{
+    border-radius: 7px;
+    margin: 10x;
+    width: 50%;
+
+}
+.input-box {
+    margin: 20px;
+}
+.input-box input {
+    background-color:#fff;
+    transition: all, 0.5s;
+    border-radius: 8px;
+    width: 60%;
+}
+.input-box input:hover {
+    background-color:  #0022AA;
+}
+.button {
+    margin: 20px;
 }
 
 @media (min-width: 362px) {

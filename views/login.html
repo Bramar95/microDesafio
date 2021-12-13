@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <header class="main-header">
@@ -41,14 +41,16 @@
     </header>
     <main>
         <section class="container-login">
-            <input type="text" name="name-surname" class="field" placeholder="Nombre de Usuario" required>
-            <label for="" class="feedback">git </label>
-            <br>
-            <input type="password" name="pass" class="field" placeholder="Contraseña">
-            <label for="" class="feedback">git </label>
-            <br>
-            <input type="submit" name="submit" value="Enviar" class="field">
-            <label for="field" class="feedback">git </label>
+            <form action="/home.html" method="post">
+                <input type="text" name="name-surname" class="field" placeholder="Nombre de Usuario" required>
+                <label for="" class="feedback"> </label>
+                <br>
+                <input type="password" name="pass" class="field" placeholder="Contraseña">
+                <label for="" class="feedback"> </label>
+                <br>
+                <input type="submit" name="submit" value="Enviar" class="field">
+                <label for="field" class="feedback"> </label>
+            </form>
         </section>
     </main>
     <footer class="main-footer">
