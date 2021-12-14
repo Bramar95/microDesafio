@@ -7,61 +7,57 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-        <header class="main-header">
-            <div class="header-container">
-                <img class="logo" src="/images/logo-mercado-liebre.svg" alt="logo"><!---No hace falta poner el nombre de la carpeta pública-->
-                <div class="search-container">
-                    <form action="" method="get">
-                        <input type=search id="search" placeholder="Buscar..." class="search">
-                        <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-            <article>
-                <h2 class="promotion-text">
-                    <i class="fas fa-hand-holding-usd"></i>
-                    Comprá en cuotas y sin tarjeta de crédito
-                </h2>
+    <header class="main-header">
+        <div class="header-container">
+            <img class="logo" src="/images/logo-mercado-liebre.svg" alt="logo"><!---No hace falta poner el nombre de la carpeta pública-->
+            <form action="" method="get" class="search-container">
+                <input type=search id="search" placeholder="Buscar..." class="search">
+                <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+            </form>
+            <article class="promotion-text">
+                <p>
+                    <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito
+                </p>
             </article>
         </div>
         <nav class="header-nav">
-                <ul class="nav-left">
-                    <li><a href="">Ofertas</a></li>
-                    <li><a href="">Tiendas Oficiales</a></li>
-                    <li><a href="">Vender</a></li>
-                    <li><a href="">Ayuda</a></li>
-                </ul>
-                <ul class="nav-right">
-                    <li><a href="#">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                    <li><a href="/">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-                </ul>
+            <ul class="nav-left">
+                <li><a href="">Ofertas</a></li>
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li><a href="/login">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li><a href="/register">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
         </nav>
-        <div class="burger-menu">
+        <div class="burguer-menu">
             <i class="fas fa-bars"></i>
         </div>
-    </div>
     </header>
     <main class="register-container">
         <form action="/home.html" method="get">
                 <article class="input-box">
-                    <input type="text" name="surname-name" id="surname-name" placeholder="   Nombre y apellido">
+                    <input type="text" name="surname-name" id="surname-name" placeholder="   Nombre y apellido" required>
                     <label for="" class="feedback"></label>
                 </article>
                 <article class="input-box">
-                    <input type="text" name="user-name" id="user-name" placeholder="   Nombre de usuario">
+                    <input type="text" name="user-name" id="user-name" placeholder="   Nombre de usuario" required>
                     <label for="" class="feedback"></label>
                 </article>
                 <article class="input-box">
-                    <input type="text" name="user-name" id="user-name" placeholder="   E-mail">
+                    <input type="text" name="user-name" id="user-name" placeholder="   E-mail" required>
                     <label for="" class="feedback"></label>
                 </article>
                 <article class="input-box">
                     <label for="birth-date" class="title-input">Fecha de nacimiento</label>
-                    <input type="date" name="birth-date" id="birth-date" placeholder="mm/dd/yyyy">
+                    <input type="date" name="birth-date" id="birth-date" placeholder="mm/dd/yyyy" required>
                     <label for="" class="feedback"></label>
                 </article>
                 <article class="input-box">
-                    <input type="text" name="address" id="address" placeholder="   Domicilio"> 
+                    <input type="text" name="address" id="address" placeholder="   Domicilio" required> 
                     <label for="address" class="feedback"></label>
                 </article>
                 <article class="input-box-radio">
@@ -72,32 +68,37 @@
                     <label for="sale">Vender</label>
                 </article>
                 <article class="input-box-list">
-                <p class="list-check">Categorías de interés:</p>
-                    <input type="checkbox" name="categorias" value="electro">
-                    <label for="electro">Electro</label>
-                    <input type="checkbox" name="categorias" value="moda">
-                    <label for="moda">Moda</label>
-                    <input type="checkbox" name="categorias" value="hogar">
-                    <label for="hogar">Hogar</label>
-                    <input type="checkbox" name="categorias" value="jugueteria">
-                    <label for="jugueteria">Juguetería</label>
-                    <input type="checkbox" name="categorias" value="salud">
-                    <label for="salud">Vida sana</label>
+                    <p class="list-check">Categorías de interés:</p>
+                    <p class="item-box">
+                        <input type="checkbox" name="categorias" value="electro">
+                        <label for="electro">Electro</label>
+                    </p>               
+                     <p class="item-box">
+                        <input type="checkbox" name="categorias" value="moda">
+                        <label for="moda">Moda</label>
+                    </p>
+                    <p class="item-box">
+                        <input type="checkbox" name="categorias" value="hogar">
+                        <label for="hogar">Hogar</label>
+                    </p>
+                    <p class="item-box">
+                        <input type="checkbox" name="categorias" value="jugueteria">
+                        <label for="jugueteria">Juguetería</label>
+                    </p>
+                    <p class="item-box">
+                        <input type="checkbox" name="categorias" value="salud">
+                        <label for="salud">Vida sana</label>
+                    </p>           
                 </article>
                 <article class="input-box-pass">
                     <p for="profile-photo">Seleccionar imagen:</p>
-                    <input type="file" name="profile-photo" accept=".jpg">
-                    <label for="" class="feedback"></label>
-                    <input type="password" name="pass" placeholder="   Ingrese contraseña">
-                    <label for="" class="feedback"></label>
-                    <input type="password" name="pass-confirm" placeholder="   Confirme contraseña">
-                    <label for="" class="feedback"></label> 
+                    <input type="file" name="profile-photo" accept=".jpg" required>
+                    <input type="password" name="pass" placeholder="   Ingrese contraseña" required>
+                    <input type="password" name="pass-confirm" placeholder="   Confirme contraseña" required>
                 </article>
                 <article>
-                    <input type="submit" name="send" value="Enviar" class="button">
-                    <label for="" class="feedback"></label>
+                    <a href="/"><input type="submit" name="send" value="Enviar" class="button"></a>
                     <input type="reset" name="reset" value="Borrar" class="button">
-                    <label for="" class="feedback"></label>
                 </article>
         </form>
         <hr>
@@ -127,21 +128,21 @@
         <footer class="bottom-footer">
             <nav class="footer-menu-left">
                 <ul class="footer-list-left">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Quienes somos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#" class="item-footer">Inicio</a></li>
+                    <li><a href="#" class="item-footer">Quienes somos</a></li>
+                    <li><a href="#" class="item-footer">Contacto</a></li>
+                    <li><a href="#" class="item-footer">Servicios</a></li>
                 </ul>
             </nav>
             <br>
             <nav class="footer-menu-right">
-                <p class="footer-title">Todos los derechos reservados</p>
                 <ul class="footer-list-right">
-                    <li><a href="#">Terminos y condiciones</a></li>
-                    <li><a href="#">Mapa de sitio</a></li>
-                    <li><a href="#">Información legal</a></li>
+                    <li><a href="#" class="item-footer">Términos y condiciones</a></li>
+                    <li><a href="#" class="item-footer">Mapa de sitio</a></li>
+                    <li><a href="#" class="item-footer">Información legal</a></li>
                 </ul>
             </nav>
+            <p class="footer-title">Todos los derechos reservados</p>
         </footer>
-</body>
+    </body>
 </html>
