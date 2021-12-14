@@ -31,87 +31,76 @@
                     <li><a href="">Ayuda</a></li>
                 </ul>
                 <ul class="nav-right">
-                    <li><a href="">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                    <li><a href="">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                    <li><a href="">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                    <li><a href="#">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="/">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
                 </ul>
         </nav>
         <div class="burger-menu">
             <i class="fas fa-bars"></i>
         </div>
-        <br>
     </div>
     </header>
     <main class="register-container">
         <form action="/home.html" method="get">
-                <div class="input-box">
-                    <label for="surname-name">Nombre y apellido:</label>
-                    <input type="text" name="surname-name" id="surname-name">
+                <article class="input-box">
+                    <input type="text" name="surname-name" id="surname-name" placeholder="   Nombre y apellido">
                     <label for="" class="feedback"></label>
-                </div>
-                <br>
-                <div class="input-box">
-                    <label for="user-name">Nombre de usuari@:</label>
-                    <input type="text" name="user-name" id="user-name">
+                </article>
+                <article class="input-box">
+                    <input type="text" name="user-name" id="user-name" placeholder="   Nombre de usuario">
                     <label for="" class="feedback"></label>
-                </div>
-                <br>
-                <div class="input-box">
-                    <label for="birth-date">Fecha de nacimiento</label>
-                    <input type="date" name="birth-date" id="birth-date">
+                </article>
+                <article class="input-box">
+                    <input type="text" name="user-name" id="user-name" placeholder="   E-mail">
                     <label for="" class="feedback"></label>
-                </div>
-                <br>
-                <div>
-                    <label for="address">Domicilio</label>
-                    <input type="text" name="address" id="address"> 
+                </article>
+                <article class="input-box">
+                    <label for="birth-date" class="title-input">Fecha de nacimiento</label>
+                    <input type="date" name="birth-date" id="birth-date" placeholder="mm/dd/yyyy">
                     <label for="" class="feedback"></label>
-                </div>
-                <br>
-                <div class="input-box">
-                    <label for="sale-or-buy">¿Desea comprar o vender?</label>
-                    <br>
+                </article>
+                <article class="input-box">
+                    <input type="text" name="address" id="address" placeholder="   Domicilio"> 
+                    <label for="address" class="feedback"></label>
+                </article>
+                <article class="input-box-radio">
+                    <p for="sale-or-buy">¿Desea comprar o vender?</p>
+                    <input type="radio" name="sale-or-buy" value="buy">
                     <label for="buy">Comprar</label>
-                    <input type="radio" name="sale-or-buy" value="comprar">
-                    <label for="" class="feedback"></label>
+                    <input type="radio" name="sale-or-buy" value="sale">
                     <label for="sale">Vender</label>
-                    <input type="radio" name="sale-or-buy" value="vender">
-                    <label for="" class="feedback"></label>
-                </div>
-                <br>
-                <label for="categorias">Categorías de interés:</label>
-                <br>
-                    <input type="checkbox" name="categorias" value="electro">Electro</input>
-                    <label for="" class="feedback"></label>
-                    <input type="checkbox" name="categorias" value="moda">Moda</input>
-                    <label for="" class="feedback"></label>
-                    <input type="checkbox" name="categorias" value="hogar">Hogar</input>
-                    <label for="" class="feedback"></label>
-                    <input type="checkbox" name="categorias" value="jugueteria">Juguetería</input>
-                    <label for="" class="feedback"></label>
-                    <input type="checkbox" name="categorias" value="salud">Vida sana</input>
-                    <label for="" class="feedback"></label>
-                <br>
-                <div class="input-box">
-                    <label for="profile-photo">Seleccionar imagen:</label>
+                </article>
+                <article class="input-box-list">
+                <p class="list-check">Categorías de interés:</p>
+                    <input type="checkbox" name="categorias" value="electro">
+                    <label for="electro">Electro</label>
+                    <input type="checkbox" name="categorias" value="moda">
+                    <label for="moda">Moda</label>
+                    <input type="checkbox" name="categorias" value="hogar">
+                    <label for="hogar">Hogar</label>
+                    <input type="checkbox" name="categorias" value="jugueteria">
+                    <label for="jugueteria">Juguetería</label>
+                    <input type="checkbox" name="categorias" value="salud">
+                    <label for="salud">Vida sana</label>
+                </article>
+                <article class="input-box-pass">
+                    <p for="profile-photo">Seleccionar imagen:</p>
                     <input type="file" name="profile-photo" accept=".jpg">
                     <label for="" class="feedback"></label>
-                    <br>
-                    <label for="pass">Ingrese contraseña:</label>
-                    <input type="password" name="pass" placeholder="Constraseña">
+                    <input type="password" name="pass" placeholder="   Ingrese contraseña">
                     <label for="" class="feedback"></label>
-                    <br>
-                    <label for="pass-confirm">Confirme contraseña:</label>
-                    <input type="password" name="pass-confirm" placeholder="Contraseña">
+                    <input type="password" name="pass-confirm" placeholder="   Confirme contraseña">
                     <label for="" class="feedback"></label> 
-                    <br>
+                </article>
+                <article>
                     <input type="submit" name="send" value="Enviar" class="button">
                     <label for="" class="feedback"></label>
-                    <br>
                     <input type="reset" name="reset" value="Borrar" class="button">
                     <label for="" class="feedback"></label>
-                </div>
+                </article>
         </form>
+        <hr>
     </main>
     <footer class="main-footer">
         <nav class="nav-main-footer">

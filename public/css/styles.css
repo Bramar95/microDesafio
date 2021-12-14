@@ -4,33 +4,27 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
-
 .general {
     max-width: 90%;
     margin: auto;
     font-family: "roboto", arial;
 }
-
 .general article {
     margin: 10px;
 }
-
+/*header*/
 .products-book {
     background-color: lightgray;
     width: 100%;
     margin: auto;
 }
-
 .header-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-
 .logo {
     position: center;
     margin: auto;
@@ -42,7 +36,7 @@
     flex-wrap: wrap;
     text-align: center;
     margin: auto;
-    width: 49%;
+    width: 50%;
 }
 .search {
     width: 70%;
@@ -51,19 +45,18 @@
     border-radius: 6px;
     border: 0px;
 }
-
 .search-button {
     padding: 7px;
     border-radius: 6px;
     border: 0px;
+    width: 20%;
 }
-
 .promotion-text {
     text-align: center;
     width: 100%;
     margin: auto;
+    padding-bottom: 20px;
 }
-
 .burger-menu {
 	background-color: #03264C;
 	color: #ffffff;
@@ -76,7 +69,6 @@
 	align-items: center;
     border-radius: 7px;
 }
-
 #truck {
     color: #39b54a;
     display: block;
@@ -93,11 +85,9 @@
     align-self: flex-start;
     transition: transform, 0.5s;
 }
-
 #truck:hover {
     transform: rotate(-90deg);
 }
-
 .header-nav ul {
     list-style: none;
     padding: 0;
@@ -108,7 +98,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 .title {
     color:rgb(100, 100, 100);
     text-align: left;
@@ -116,65 +105,54 @@
     width: 100%;
     padding-left: 25px;
 }
-
 .banner img{
     width:100%;
 }
-
 .price {
     width: 40%;
     display: block;
     margin: auto;
 }
-
 .discount {
     color: #39b54a;
     width: 40%;
     display: block;
     margin: auto;
 }
-
 .product img {
     width:100%;
 }
-
 .main-header {
     background-color: #EAC926;
     font-family: "roboto", arial;
     font-size: 25%;
 }
-
 .main-header h2 {
     font-size: 12px;
     text-align: center;
 }
-
 .header-nav a {
     font-weight: bold;
     text-decoration: none;
     color: black;
     font-size: 12px;
 }
-
 .main-footer {
     text-align: center;
 }
-
 .main-footer i {
     font-size: 2em;
     margin-bottom: 10px;
 }
-
 .product {
     background-color: #fff;
     margin: 10px;
     box-shadow: 0;
     transition: box-shadow, 0.5s;
 }
-
 .product:hover {
-    box-shadow: 0px 0px 15px rgb(100, 100, 100);}
-
+    box-shadow: 0px 0px 15px rgb(100, 100, 100);
+}
 .description {
     background-color: #fff;
 	padding: 15px 0;
@@ -186,14 +164,12 @@
 	justify-content: space-between;
     position: relative;
 }
-
 .product-name {
     display: none;
     align-self: flex-end;
     width: 100%;
     padding-left: 10px;
 }
-
 .header-nav {
     display: none;
 }
@@ -204,44 +180,38 @@ ul {
     margin: 0;
     text-decoration: none;
 }
-
 li a{
     text-decoration: none;
 }
-
 .main-footer {
     background-color: lightgray;
     width: 100%;
     margin: auto;
     font-family: "Roboto", sans-serif;
 }
-
 .item {
     padding: 15px;
     text-align: center;
 }
-
 .item i {
     width: 2em;
     margin-bottom: 10px;
     color: #03264C;
     transition: color, 0.5s;
 }
-
 .item i:hover {
     color: rgb(100, 100, 100);
 }
-
 .copyright {
     text-align: center;
     font-weight: bold;
     margin: auto;
+    font-size: 0.6rem;
+    font-style: italic;
 }
-
 .footer-title {
     text-align: center;
 }
-
 .bottom-footer {
         display: flex;
         margin: auto;
@@ -258,7 +228,7 @@ li a{
 }
 /*Main login*/
 .container-login {
-    background-color: rgb(100, 100, 100);
+    background-color: lightgrey;
     width: 100%;
     margin:auto;
     text-align: center;
@@ -269,53 +239,118 @@ li a{
     margin: 8px;
 }
 .container-login {
-    height: 500px;
+    min-height: 200px;
 }
-.container-login input {
-    height: 25px;
-    margin: 20px;
-}
-.container-login input {
+.field {
     background-color:#fff;
     transition: background-color, 0.5s;
-    border-radius: 8px;
-    width: 75%;
+    border-radius: 7px;
+    width: 80%;
+    margin: 20px auto;
+    border: 0px;
 }
-
 .container-login input:hover {
-    background-color:  #0022AA;
+    background-color:  #03264C;
+}
+.submit-login {
+    width: 65px;
+    background-color: #03264C;
+    border-radius: 7px;
+    margin: 20px;
+    border: 0px;
+    transition: all, 0.5s;
+    padding: 2px 0px;
+    color: #ffffff;
+}
+.submit-login:hover {
+    background-color: #fff;
 }
 /*register*/
 .register-container {
-    background-color: rgb(100, 100, 100);
+    background-color: lightgray;
     width: 100%;
-    margin:auto;
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
-}
-.input-box input{
-    border-radius: 7px;
-    margin: 10x;
-    width: 50%;
-
+    padding: 20px;
 }
 .input-box {
     margin: 20px;
 }
-.input-box input {
+.input-box input,
+.input-box-pass input {
     background-color:#fff;
     transition: all, 0.5s;
-    border-radius: 8px;
-    width: 60%;
+    border-radius: 6px;
+    width: 80%;
+    padding: 5px 0px;
+    text-align: left;
+    border: 0px;
 }
 .input-box input:hover {
-    background-color:  #0022AA;
+    background-color:  #03264c;
+}
+#birth-date {
+    margin-top: 5px;
+}
+.title-input {
+    width: 100%;
+    display: block;
+}
+.address {
+    border-radius: 7px;
+    margin: 10x;
+    width: 50px;
+    border: 0px;
+}
+.input-box-radio {
+    display: flex;
+    flex-wrap: wrap;
+}
+.input-box-radio p{
+    width: 100%;
+}
+.input-box-radio label{
+    width: 38%;
+    text-align: left;
+}
+.input-box-radio input {
+    width: 10%;
+}
+.list-check {
+    width: 100%;
+}
+.input-box-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.input-box-list input {
+    width: 8%;
+}
+.input-box-list label {
+    width: 90%;
+    text-align: left;
+}
+.input-box-list input {
+    width: 80%;
 }
 .button {
-    margin: 20px;
+    width: 65px;
+    background-color: #03264C;
+    border-radius: 7px;
+    margin: 20px auto;
+    border: 0px;
+    transition: all, 0.5s;
+    padding: 2px 0px;
+    color: #ffffff;
+    display: block;
 }
-
+.input-box-pass input {
+    margin: 5px;
+}
+.input-box-pass p {
+    margin: 0px;
+}
 @media (min-width: 362px) {
     .header-container {
         width: 100%;
@@ -374,8 +409,11 @@ li a{
         margin: auto;
     }
     .search-container {
-        width: 25%;
+        width: 40%;
         margin: auto;
+    }
+    #search {
+        padding-right: 80px;
     }
     .promotion-text {
         width: 100%;
@@ -409,6 +447,3 @@ li a{
         width: 30%;
     }
 }
-
-
-
